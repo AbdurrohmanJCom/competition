@@ -2,6 +2,10 @@ class atbor_1:
     def __init__(self, given_days):
         self.given_days = given_days
 
+    def givendays_(self):
+        return self.given_days
+    
+
     def year_in(self):
         global year_ans
         year_ans = self.given_days // 365
@@ -22,6 +26,7 @@ class atbor_1:
 
 
 a = atbor_1(738)
+print('DAYS : ', a.givendays_())
 print('years : ' , a.year_in())
 print('weeks : ', a.weeks_in())
 print('days : ', a.days_in())
